@@ -304,7 +304,6 @@ img {
   z-index: 2;
 }
 
-/* Timeline Section Spacing */
 #timeline-section .timeline-card-wrapper {
   margin-bottom: 2.5rem;
   transition: box-shadow 0.3s;
@@ -339,7 +338,6 @@ img {
 }
 
 .dropdown > .dropdown-toggle:active {
-  /* prevent dropdown from closing on click inside dropdown */
   pointer-events: none;
 }
 
@@ -407,6 +405,11 @@ img {
 @media (min-width: 992px) {
   .display-deliver {
     font-size: 3.5rem;
+  }
+}
+@media (max-width: 765px) {
+  .plus {
+    font-size: 2rem;
   }
 }
 .subheading {
@@ -633,6 +636,7 @@ img {
 }
 .hero-section {
   padding: 100px 0;
+  background: #fafafa;
 }
 
 .our-story-section {

@@ -10,6 +10,92 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// --- Mobile-specific GSAP Animations ---
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.gsap && window.ScrollTrigger && window.matchMedia('(max-width: 991.98px)').matches) {
+        // Footer fade-in and pop for logo, description, and buttons
+        gsap.from('#footer-section .footer-logo', {
+            opacity: 0,
+            y: 30,
+            duration: 0.7,
+            ease: 'power2.out',
+            scrollTrigger: {
+                trigger: '#footer-section .footer-logo',
+                start: 'top 95%',
+                toggleActions: 'play none none none',
+                once: true
+            }
+        });
+        gsap.from('#footer-section .footer-desc', {
+            opacity: 0,
+            y: 30,
+            duration: 0.7,
+            delay: 0.2,
+            ease: 'power2.out',
+            scrollTrigger: {
+                trigger: '#footer-section .footer-desc',
+                start: 'top 95%',
+                toggleActions: 'play none none none',
+                once: true
+            }
+        });
+        gsap.from('#footer-section .footer-btn', {
+            opacity: 0,
+            scale: 0.8,
+            duration: 0.5,
+            delay: 0.4,
+            ease: 'back.out(1.7)',
+            stagger: 0.15,
+            scrollTrigger: {
+                trigger: '#footer-section .footer-btn',
+                start: 'top 95%',
+                toggleActions: 'play none none none',
+                once: true
+            }
+        });
+        // Menu and utility fade-in
+        gsap.from('#footer-section .footer-menu li, #footer-section .footer-utility li', {
+            opacity: 0,
+            y: 20,
+            duration: 0.5,
+            stagger: 0.08,
+            scrollTrigger: {
+                trigger: '#footer-section .footer-menu',
+                start: 'top 98%',
+                toggleActions: 'play none none none',
+                once: true
+            }
+        });
+        // City icons staggered fade-in
+        gsap.from('#footer-section .footer-locations .location-item', {
+            opacity: 0,
+            y: 30,
+            duration: 0.6,
+            stagger: 0.12,
+            scrollTrigger: {
+                trigger: '#footer-section .footer-locations',
+                start: 'top 98%',
+                toggleActions: 'play none none none',
+                once: true
+            }
+        });
+        // Copyright fade-in
+        gsap.from('#footer-section .footer-copyright', {
+            opacity: 0,
+            y: 15,
+            duration: 0.5,
+            delay: 0.2,
+            ease: 'power1.out',
+            scrollTrigger: {
+                trigger: '#footer-section .footer-copyright',
+                start: 'top 99%',
+                toggleActions: 'play none none none',
+                once: true
+            }
+        });
+    }
+});
 // GSAP Animation for Floating Help Box Card Swap
 document.addEventListener('DOMContentLoaded', function() {
     if (window.gsap) {

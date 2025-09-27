@@ -274,7 +274,6 @@
     box-shadow: 0 8px 32px rgba(255,87,34,0.12);
     z-index: 2;
 }
-/* Timeline Section Spacing */
 #timeline-section {
     .timeline-card-wrapper {
         margin-bottom: 2.5rem;
@@ -312,7 +311,6 @@
 }
 
 .dropdown > .dropdown-toggle:active {
-  /* prevent dropdown from closing on click inside dropdown */
   pointer-events: none;
 }
 
@@ -376,7 +374,11 @@
         font-size: 3.5rem;
     }
 }
-
+@media (max-width:765px) {
+    .plus{
+        font-size: 2rem;
+    }
+}
 .subheading {
     font-size: 1.2rem;
     font-weight: 900;
