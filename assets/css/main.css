@@ -18,6 +18,26 @@ img {
   max-width: 100%;
 }
 
+.dropdown-menu-wide .dropdown-item {
+  font-size: 1.15rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 4px;
+}
+
+.dropdown-menu-wide .dropdown-item.text-orange {
+  color: #FF5A3C !important;
+  border-bottom: 2px solid #FF5A3C !important;
+}
+
+.footer-cta {
+  margin-bottom: 48px;
+}
+
+.navbar-nav .nav-link.active {
+  color: #FF5A3C !important;
+}
+
 .footer-cta h5,
 .footer-cta a,
 .footer-cta ul li a,
@@ -283,7 +303,9 @@ img {
 }
 
 .dropdown-menu-wide {
-  width: 400px;
+  width: 600px;
+  min-width: 600px;
+  max-width: 98vw;
 }
 
 .hero-section {
