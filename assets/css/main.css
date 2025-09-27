@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #fff;
+  color: #2c2c2c;
+  overflow-x: hidden;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #F5F5F5;
+}
+
+img {
+  max-width: 100%;
+}
+
+.dropdown-toggle::after {
+  transition: transform 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transform: rotate(180deg);
+}
+
+.dropdown-toggle.dropdown-open::after,
+.dropdown-toggle:hover::after {
+  transform: rotate(0deg);
+}
+
+#partners-section .col-md-4 img {
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+
+#partners-section .col-md-4.float-in img {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.press-card {
+  transition: transform 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67), box-shadow 0.25s;
+}
+
+.press-card:hover {
+  transform: scale(1.045);
+  box-shadow: 0 8px 32px rgba(255, 87, 34, 0.12);
+  z-index: 2;
+}
+
+/* Timeline Section Spacing */
+#timeline-section .timeline-card-wrapper {
+  margin-bottom: 2.5rem;
+  transition: box-shadow 0.3s;
+}
+#timeline-section .timeline-card-wrapper:last-child {
+  margin-bottom: 0;
+}
+#timeline-section #timeline-cards-col {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+#timeline-section #timeline-cards-col::-webkit-scrollbar {
+  display: none;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.btn:hover {
+  background-color: #F5F5F5;
+  color: #000;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  /* prevent dropdown from closing on click inside dropdown */
+  pointer-events: none;
+}
+
+.text-primary-deliver {
+  color: #FF5A36 !important;
+}
+
+.bg-primary-deliver {
+  background-color: #FF5A36 !important;
+}
+
+.btn-primary-deliver {
+  background-color: #FF5A36;
+  border-color: #FF5A36;
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary-deliver:hover {
+  background-color: #e55130;
+  border-color: #e55130;
+  transform: translateY(-2px);
+  color: white;
+}
+
+.btn-nav-ghost {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  color: #2c2c2c;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  --bs-btn-color: $deliver-dark;
+  --bs-btn-hover-color: $deliver-dark;
+  --bs-btn-active-color: $deliver-dark;
+  transition: all 0.2s;
+}
+
+.btn-nav-ghost:hover, .btn-nav-ghost:focus {
+  background-color: #FF5A3C !important;
+  color: #fff !important;
+  border-color: #FF5A3C !important;
+  transform: translateY(-1px);
+}
+
+.card-custom-shadow {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  border: none;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FF5A36 !important;
+}
+
+.display-deliver {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+@media (min-width: 992px) {
+  .display-deliver {
+    font-size: 3.5rem;
+  }
+}
+.subheading {
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FF5A36;
+}
+
+.counter-value {
+  color: #2c2c2c;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.plus {
+  color: #FF5A36;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.image-placeholder {
+  min-height: 400px;
+  background: #f0f0f0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2c2c2c;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-placeholder img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-muted {
+  margin-right: 25px;
+  font-size: 1.2rem;
+}
+
+.news-card {
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.news-card:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.news-card a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+.news-card a:hover {
+  color: #FF5A36;
+}
+
+.partner-logo {
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s;
+  max-height: 40px;
+}
+
+.partner-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.dropdown-menu-wide {
+  width: 400px;
+}
+
+.hero-section {
+  padding: 100px 0;
+  background: #fafafa;
+}
+
+.our-story-section {
+  padding: 100px 0;
+}
+
+.our-mission-section {
+  padding: 100px 0;
+}
+
+.our-funding-section {
+  padding: 100px 0;
+}
+
+.our-partners-section {
+  padding: 100px 0;
+}
+
+.in-the-press-section {
+  padding: 100px 0;
+}
+
+.available-in-section {
+  padding: 100px 0;
+}
+
+.footer {
+  padding: 100px 0;
+  background-color: #F5F5F5;
+}
+
+.section-padding {
+  padding: 6rem 0;
+}
+
+.timeline-container {
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.timeline-line {
+  position: absolute;
+  width: 2px;
+  background-color: #e0e0e0;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 991.98px) {
+  .timeline-line {
+    left: 1rem;
+  }
+  .timeline-item {
+    border-left: 2px solid #e0e0e0;
+    padding-left: 2rem;
+    margin-left: 0;
+  }
+  .timeline-item-body {
+    margin-left: -1px;
+  }
+  .timeline-dot {
+    left: 1rem;
+    transform: translate(-50%, -50%);
+  }
+  .text-lg-end {
+    text-align: left !important;
+  }
+}
+.timeline-item {
+  position: relative;
+  padding-bottom: 4rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #FF5A36;
+  border: 4px solid #fff;
+  z-index: 10;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.timeline-item:nth-child(even) .timeline-dot {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timeline-item-body {
+  background-color: #fff;
+  padding-top: 0;
+}
+
+.footer-cta {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/*# sourceMappingURL=main.css.map */

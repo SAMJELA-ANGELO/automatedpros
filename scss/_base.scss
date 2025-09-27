@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    color: $deliver-dark;
+    overflow-x: hidden;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $accent-color;
+    }
+}
+
+img {
+    max-width: 100%;
+}
