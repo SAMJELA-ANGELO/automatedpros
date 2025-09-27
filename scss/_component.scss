@@ -1,3 +1,184 @@
+@media (max-width: 991.98px) {
+    #footer-section {
+        padding: 2rem 0.5rem 1rem 0.5rem;
+        background: #fff;
+        .footer-logo {
+            display: block;
+            margin: 0 auto 0.7rem auto;
+            max-width: 38px;
+        }
+        .footer-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
+        .footer-desc {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1.2rem;
+            text-align: left;
+        }
+        .footer-btn {
+            width: 100%;
+            font-size: 1rem;
+            padding: 0.7rem 0;
+            margin-bottom: 0.7rem;
+            border-radius: 8px;
+            display: block;
+            text-align: center;
+        }
+        .footer-menu {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem 1.5rem;
+            font-size: 0.95rem;
+            margin-bottom: 1.2rem;
+            list-style: none;
+            padding: 0;
+        }
+        .footer-menu-title {
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            grid-column: 1 / -1;
+            text-align: left;
+        }
+        .footer-utility {
+            font-size: 0.95rem;
+            margin-bottom: 1.2rem;
+            list-style: none;
+            padding: 0;
+        }
+        .footer-utility-title {
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
+        .utility-link {
+            color: #ff4d2d;
+            font-weight: 600;
+            text-decoration: underline;
+            display: inline-block;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .footer-locations {
+            margin-bottom: 1.2rem;
+            .footer-locations-title {
+                font-weight: 700;
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+                text-align: left;
+            }
+            .location-item {
+                display: flex;
+                align-items: center;
+                gap: 0.7rem;
+                margin-bottom: 0.7rem;
+                font-size: 0.95rem;
+                img {
+                    max-width: 32px;
+                }
+            }
+        }
+        .footer-copyright {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
+    }
+}
+@media (max-width: 991.98px) {
+    #hero-graphic .card-custom-shadow img {
+        max-width: 90px !important;
+        max-height: 60px !important;
+    }
+}
+@media (max-width: 991.98px) {
+    .navbar {
+        min-height: 72px;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar-brand {
+        margin-right: 0 !important;
+        display: flex;
+        align-items: center;
+    }
+    .navbar-brand img {
+        margin-left: 0 !important;
+        height: 32px !important;
+    }
+    .navbar-nav {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        width: 100%;
+        padding: 0.5rem 0.5rem;
+    }
+    .navbar-nav .nav-item {
+        width: 100%;
+    }
+    .navbar-nav .nav-link {
+        font-size: 1.05rem !important;
+        padding: 12px 0 !important;
+        text-align: left;
+        width: 100%;
+    }
+    .navbar-collapse {
+        position: absolute;
+        top: 72px;
+        left: 0;
+        width: 100vw;
+        background: #fff;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+        z-index: 999;
+        border-radius: 0 0 16px 16px;
+        padding-bottom: 1rem;
+    }
+    .navbar-toggler {
+        border: none;
+        background: transparent;
+        font-size: 2rem;
+        margin-right: 0;
+        margin-left: auto;
+        outline: none;
+        box-shadow: none;
+    }
+    .navbar .cart-link {
+        margin-left: auto;
+        margin-right: 16px;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+}
+@media (max-width: 991.98px) {
+    .dropdown-menu-wide {
+        position: static !important;
+        box-shadow: none !important;
+        min-width: 100% !important;
+        width: 100% !important;
+        padding: 0.5rem 0.5rem !important;
+        border-radius: 0;
+    }
+    .dropdown-menu-wide .dropdown-item {
+        font-size: 1rem !important;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin-bottom: 2px;
+    }
+    .dropdown-menu-wide .row {
+        flex-direction: column !important;
+    }
+    .dropdown-menu-wide .col-6 {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
 .dropdown-menu-wide .dropdown-item {
     font-size: 1.15rem;
     padding-top: 10px;
@@ -265,4 +446,154 @@
     width: 600px;
     min-width: 600px;
     max-width: 98vw;
+}
+
+/* Mobile-specific tweaks for partners, press/news, and footer/menu */
+@media (max-width: 991.98px) {
+    /* Partners section mobile tweaks */
+    #partners-section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        .section-title {
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            color: #ff4d2d;
+            margin-bottom: 0.5rem;
+        }
+        h2, h3, h4 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .partner-desc {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .partner-icon {
+            display: block;
+            margin: 0 auto 0.5rem auto;
+            max-width: 90px;
+            height: auto;
+        }
+        .partner-block {
+            margin-bottom: 2.2rem;
+            text-align: center;
+        }
+    }
+
+    /* Press & News cards mobile tweaks */
+    #press-section {
+        .press-title {
+            font-size: 1.1rem;
+            color: #ff4d2d;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .press-card {
+            border-radius: 18px;
+            box-shadow: 0 2px 16px 0 rgba(0,0,0,0.07);
+            padding: 1.2rem 1rem;
+            margin-bottom: 1.2rem;
+            background: #fff;
+            .press-company {
+                font-size: 1.05rem;
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+            }
+            .press-title {
+                font-size: 1.05rem;
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+            }
+            .press-date {
+                font-size: 0.9rem;
+                color: #888;
+                margin-bottom: 0.5rem;
+            }
+            .press-link {
+                color: #ff4d2d;
+                font-size: 0.95rem;
+                font-weight: 600;
+                text-decoration: none;
+            }
+        }
+    }
+
+    /* Footer/Menu mobile tweaks */
+    #footer-section {
+        .footer-logo {
+            max-width: 38px;
+            margin-bottom: 0.7rem;
+        }
+        .footer-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .footer-desc {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1.2rem;
+        }
+        .footer-btn {
+            width: 100%;
+            font-size: 1rem;
+            padding: 0.7rem 0;
+            margin-bottom: 0.7rem;
+            border-radius: 8px;
+        }
+        .footer-menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.5rem;
+            font-size: 0.95rem;
+            margin-bottom: 1.2rem;
+        }
+        .footer-utility {
+            font-size: 0.95rem;
+            margin-bottom: 1.2rem;
+        }
+        .footer-utility .utility-link {
+            color: #ff4d2d;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+        .footer-locations {
+            margin-bottom: 1.2rem;
+            .location-item {
+                display: flex;
+                align-items: center;
+                gap: 0.7rem;
+                margin-bottom: 0.7rem;
+                font-size: 0.95rem;
+                img {
+                    max-width: 32px;
+                }
+            }
+        }
+        .footer-copyright {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    /* General mobile tweaks */
+    h1, h2, h3, h4 {
+        font-size: 1.2rem !important;
+        font-weight: 700 !important;
+    }
+    p, .lead, .text-muted {
+        font-size: 0.95rem !important;
+    }
+    .section-padding {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
 }
