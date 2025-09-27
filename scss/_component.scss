@@ -1,3 +1,38 @@
+// Footer navigation and text links
+.footer-cta h5,
+.footer-cta a,
+.footer-cta ul li a,
+.footer-cta span,
+.footer-cta {
+    font-size: 0.8rem !important;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+}
+.footer-cta ul {
+    margin-bottom: 18px;
+}
+// Footer city icons and text
+.footer-city-icon img {
+    border-radius: 18px;
+}
+// Navbar customizations
+.navbar {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+}
+.navbar-brand img {
+    margin-left: 24px;
+}
+.navbar-nav {
+    align-items: center;
+}
+.navbar-nav .nav-link {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
 .dropdown-toggle::after {
     transition: transform 0.3s cubic-bezier(.17,.67,.83,.67);
     transform: rotate(180deg);
@@ -21,6 +56,21 @@
 
 .press-card {
     transition: transform 0.25s cubic-bezier(.17,.67,.83,.67), box-shadow 0.25s;
+    margin-top: 32px;
+    padding: 36px 32px 32px 32px;
+    min-height: 300px;
+    font-size: 1.1rem;
+    h5 {
+        font-size: 1.35rem;
+    }
+        .d-flex.align-items-center img {
+            height: 32px !important;
+            width: auto;
+            margin-top: 30px;
+    }
+    .text-muted, .text-orange {
+        font-size: 1rem;
+    }
 }
 .press-card:hover {
     transform: scale(1.045);
@@ -50,9 +100,9 @@
     border-radius: 5px;
     background-color: $primary-color;
     color: $secondary-color;
-    text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
+    font-size: 20px;
 
     &:hover {
         background-color: $accent-color;
@@ -134,7 +184,6 @@
     font-size: 1.2rem;
     font-weight: 900;
     letter-spacing: 2px;
-    text-transform: uppercase;
     color: $deliver-primary;
 }
 .counter-value{
